@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C209E04207268E10004C87D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C209E03207268E10004C87D /* AppDelegate.swift */; };
+		1C209E06207268E10004C87D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C209E05207268E10004C87D /* ViewController.swift */; };
+		1C209E09207268E10004C87D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C209E07207268E10004C87D /* Main.storyboard */; };
+		1C209E0B207268E10004C87D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C209E0A207268E10004C87D /* Assets.xcassets */; };
+		1C209E0E207268E10004C87D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C209E0C207268E10004C87D /* LaunchScreen.storyboard */; };
+		1C209E16207269FA0004C87D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1C209E15207269FA0004C87D /* .gitignore */; };
+		87CB9B0ADA6F81B44B8FDD83 /* Pods_comicbook_readingtracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6207F521C660775D08145E0 /* Pods_comicbook_readingtracker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C209E00207268E10004C87D /* comicbook-readingtracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "comicbook-readingtracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C209E03207268E10004C87D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C209E05207268E10004C87D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C209E08207268E10004C87D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C209E0A207268E10004C87D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C209E0D207268E10004C87D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C209E0F207268E10004C87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C209E15207269FA0004C87D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		53F8B54CA3FD03A43FC058F4 /* Pods-comicbook-readingtracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comicbook-readingtracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-comicbook-readingtracker/Pods-comicbook-readingtracker.debug.xcconfig"; sourceTree = "<group>"; };
+		819C9E48D59C92A75FD83C8E /* Pods-comicbook-readingtracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comicbook-readingtracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-comicbook-readingtracker/Pods-comicbook-readingtracker.release.xcconfig"; sourceTree = "<group>"; };
+		E6207F521C660775D08145E0 /* Pods_comicbook_readingtracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comicbook_readingtracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C209DFD207268E10004C87D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87CB9B0ADA6F81B44B8FDD83 /* Pods_comicbook_readingtracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A6F1DF1C78550FA84938C69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53F8B54CA3FD03A43FC058F4 /* Pods-comicbook-readingtracker.debug.xcconfig */,
+				819C9E48D59C92A75FD83C8E /* Pods-comicbook-readingtracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1C209DF7207268E10004C87D = {
+			isa = PBXGroup;
+			children = (
+				1C209E15207269FA0004C87D /* .gitignore */,
+				1C209E02207268E10004C87D /* comicbook-readingtracker */,
+				1C209E01207268E10004C87D /* Products */,
+				0A6F1DF1C78550FA84938C69 /* Pods */,
+				63CED2E890753CA786E9628B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1C209E01207268E10004C87D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C209E00207268E10004C87D /* comicbook-readingtracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C209E02207268E10004C87D /* comicbook-readingtracker */ = {
+			isa = PBXGroup;
+			children = (
+				1C209E03207268E10004C87D /* AppDelegate.swift */,
+				1C209E05207268E10004C87D /* ViewController.swift */,
+				1C209E07207268E10004C87D /* Main.storyboard */,
+				1C209E0A207268E10004C87D /* Assets.xcassets */,
+				1C209E0C207268E10004C87D /* LaunchScreen.storyboard */,
+				1C209E0F207268E10004C87D /* Info.plist */,
+			);
+			path = "comicbook-readingtracker";
+			sourceTree = "<group>";
+		};
+		63CED2E890753CA786E9628B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6207F521C660775D08145E0 /* Pods_comicbook_readingtracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C209DFF207268E10004C87D /* comicbook-readingtracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C209E12207268E10004C87D /* Build configuration list for PBXNativeTarget "comicbook-readingtracker" */;
+			buildPhases = (
+				A597260225A28CEE377DD638 /* [CP] Check Pods Manifest.lock */,
+				1C209DFC207268E10004C87D /* Sources */,
+				1C209DFD207268E10004C87D /* Frameworks */,
+				1C209DFE207268E10004C87D /* Resources */,
+				B5BD1D1D8F265E85200F8F33 /* [CP] Embed Pods Frameworks */,
+				59BA9F828484A05DE15E39BA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "comicbook-readingtracker";
+			productName = "comicbook-readingtracker";
+			productReference = 1C209E00207268E10004C87D /* comicbook-readingtracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C209DF8207268E10004C87D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Sabahattin Dizdar";
+				TargetAttributes = {
+					1C209DFF207268E10004C87D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1C209DFB207268E10004C87D /* Build configuration list for PBXProject "comicbook-readingtracker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C209DF7207268E10004C87D;
+			productRefGroup = 1C209E01207268E10004C87D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C209DFF207268E10004C87D /* comicbook-readingtracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C209DFE207268E10004C87D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C209E16207269FA0004C87D /* .gitignore in Resources */,
+				1C209E0E207268E10004C87D /* LaunchScreen.storyboard in Resources */,
+				1C209E0B207268E10004C87D /* Assets.xcassets in Resources */,
+				1C209E09207268E10004C87D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59BA9F828484A05DE15E39BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-comicbook-readingtracker/Pods-comicbook-readingtracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A597260225A28CEE377DD638 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-comicbook-readingtracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5BD1D1D8F265E85200F8F33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-comicbook-readingtracker/Pods-comicbook-readingtracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C209DFC207268E10004C87D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C209E06207268E10004C87D /* ViewController.swift in Sources */,
+				1C209E04207268E10004C87D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1C209E07207268E10004C87D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C209E08207268E10004C87D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1C209E0C207268E10004C87D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C209E0D207268E10004C87D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C209E10207268E10004C87D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C209E11207268E10004C87D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C209E13207268E10004C87D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F8B54CA3FD03A43FC058F4 /* Pods-comicbook-readingtracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "comicbook-readingtracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sdi.comicbook-readingtracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C209E14207268E10004C87D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 819C9E48D59C92A75FD83C8E /* Pods-comicbook-readingtracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "comicbook-readingtracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sdi.comicbook-readingtracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C209DFB207268E10004C87D /* Build configuration list for PBXProject "comicbook-readingtracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C209E10207268E10004C87D /* Debug */,
+				1C209E11207268E10004C87D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C209E12207268E10004C87D /* Build configuration list for PBXNativeTarget "comicbook-readingtracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C209E13207268E10004C87D /* Debug */,
+				1C209E14207268E10004C87D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C209DF8207268E10004C87D /* Project object */;
+}
