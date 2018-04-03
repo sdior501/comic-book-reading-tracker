@@ -6,5 +6,8 @@ target 'comicbook-readingtracker' do
   use_frameworks!
 
   # Pods for comicbook-readingtracker
+  pod 'Alamofire', '~> 4.7'
+  pod 'AlamofireObjectMapper', '~> 5.0'
+  pod 'AlamofireImage', '~> 3.3'
 
 end
