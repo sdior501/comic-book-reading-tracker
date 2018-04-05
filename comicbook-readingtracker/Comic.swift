@@ -2,7 +2,7 @@ import UIKit
 import ObjectMapper
 import AlamofireObjectMapper
 
-class SearchResponse: Mappable {
+class ComicSearchResponse: Mappable {
     
     var comic: [Comic]?
     
@@ -11,6 +11,18 @@ class SearchResponse: Mappable {
     
     func mapping(map: Map) {
         comic <- map["results"]
+    }
+}
+
+class VolumeSearchResponse: Mappable {
+    
+    var volume: [Volume]?
+    
+    required init?(map: Map) {
+    }
+    
+    func mapping(map: Map) {
+        volume <- map["results"]
     }
 }
 
@@ -23,6 +35,7 @@ class Comic: Mappable {
     var name: String?
     var coverImage: UIImage?
     var volume: Volume?
+    var order: Int!
     
     required init?(map: Map) {
     }

@@ -1,4 +1,5 @@
 import UIKit
+import M13Checkbox
 
 class IssueTableViewCell: UITableViewCell {
 
@@ -7,11 +8,19 @@ class IssueTableViewCell: UITableViewCell {
     @IBOutlet weak var readingNumberLabel: UILabel!
     @IBOutlet weak var volumeNameLabel: UILabel!
     @IBOutlet weak var issueNameLabel: UILabel!
+    @IBOutlet weak var checkBox: M13Checkbox!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         prepareCoverView()
+        prepareCheckBox()
+    }
+    
+    fileprivate func prepareCheckBox() {
+        checkBox.boxType = .circle
+        checkBox.stateChangeAnimation = .spiral
+        checkBox.animationDuration = 0.5
     }
     
     fileprivate func prepareCoverView() {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JGf-cy-Vzu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QhW-9u-spO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,36 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--List Selection View Controller-->
+        <scene sceneID="Ew8-WG-v3d">
+            <objects>
+                <viewController storyboardIdentifier="ListSelectionViewController" id="QhW-9u-spO" customClass="ListSelectionViewController" customModule="comicbook_readingtracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="onh-AB-7pD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zww-ae-ghS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rEg-QW-JSg" firstAttribute="bottom" secondItem="zww-ae-ghS" secondAttribute="bottom" id="bH0-Hn-orH"/>
+                            <constraint firstItem="rEg-QW-JSg" firstAttribute="trailing" secondItem="zww-ae-ghS" secondAttribute="trailing" id="bLh-61-WpE"/>
+                            <constraint firstItem="zww-ae-ghS" firstAttribute="leading" secondItem="rEg-QW-JSg" secondAttribute="leading" id="sXz-pG-Fpl"/>
+                            <constraint firstItem="zww-ae-ghS" firstAttribute="top" secondItem="rEg-QW-JSg" secondAttribute="top" id="wzy-pX-VSn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rEg-QW-JSg"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="zww-ae-ghS" id="mtC-jv-74y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mys-yN-PVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1466" y="32"/>
+        </scene>
         <!--Reading List View Controller-->
         <scene sceneID="0DZ-Yf-wIj">
             <objects>
@@ -97,6 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-74" y="32"/>
         </scene>
     </scenes>
 </document>

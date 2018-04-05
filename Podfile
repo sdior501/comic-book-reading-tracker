@@ -9,5 +9,6 @@ target 'comicbook-readingtracker' do
   pod 'Alamofire', '~> 4.7'
   pod 'AlamofireObjectMapper', '~> 5.0'
   pod 'AlamofireImage', '~> 3.3'
+  pod 'M13Checkbox'
 
 end

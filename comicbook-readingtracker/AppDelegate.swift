@@ -5,15 +5,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
         let nav = UINavigationController()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let readingList = storyboard.instantiateViewController(withIdentifier: "ReadingListViewController") as! ReadingListViewController
+        let listVC = storyboard.instantiateViewController(withIdentifier: "ListSelectionViewController") as! ListSelectionViewController
         
-        nav.viewControllers = [readingList]
+        nav.viewControllers = [listVC]
         self.window!.rootViewController = nav
         self.window?.makeKeyAndVisible()
         return true

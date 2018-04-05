@@ -18,6 +18,11 @@
 		1C209E1D207398820004C87D /* IssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C209E1B207398820004C87D /* IssueTableViewCell.swift */; };
 		1C209E1E207398820004C87D /* IssueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C209E1C207398820004C87D /* IssueTableViewCell.xib */; };
 		1C209E202073AAA80004C87D /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C209E1F2073AAA80004C87D /* Issue.swift */; };
+		1C209E282074F9B90004C87D /* comic.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C209E272074F9B70004C87D /* comic.json */; };
+		1C209E2A207603110004C87D /* Ultimate X-Men.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C209E29207603110004C87D /* Ultimate X-Men.json */; };
+		1C209E2C2076046E0004C87D /* ListSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C209E2B2076046E0004C87D /* ListSelectionViewController.swift */; };
+		1C209E2E20760A970004C87D /* IssueList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C209E2D20760A970004C87D /* IssueList.swift */; };
+		1CCFF8A720763A560081F334 /* Ultimate Spider-Man.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CCFF8A620763A560081F334 /* Ultimate Spider-Man.json */; };
 		87CB9B0ADA6F81B44B8FDD83 /* Pods_comicbook_readingtracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6207F521C660775D08145E0 /* Pods_comicbook_readingtracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +40,11 @@
 		1C209E1B207398820004C87D /* IssueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTableViewCell.swift; sourceTree = "<group>"; };
 		1C209E1C207398820004C87D /* IssueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssueTableViewCell.xib; sourceTree = "<group>"; };
 		1C209E1F2073AAA80004C87D /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		1C209E272074F9B70004C87D /* comic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comic.json; sourceTree = "<group>"; };
+		1C209E29207603110004C87D /* Ultimate X-Men.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Ultimate X-Men.json"; sourceTree = "<group>"; };
+		1C209E2B2076046E0004C87D /* ListSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSelectionViewController.swift; sourceTree = "<group>"; };
+		1C209E2D20760A970004C87D /* IssueList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueList.swift; sourceTree = "<group>"; };
+		1CCFF8A620763A560081F334 /* Ultimate Spider-Man.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Ultimate Spider-Man.json"; sourceTree = "<group>"; };
 		53F8B54CA3FD03A43FC058F4 /* Pods-comicbook-readingtracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comicbook-readingtracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-comicbook-readingtracker/Pods-comicbook-readingtracker.debug.xcconfig"; sourceTree = "<group>"; };
 		819C9E48D59C92A75FD83C8E /* Pods-comicbook-readingtracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comicbook-readingtracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-comicbook-readingtracker/Pods-comicbook-readingtracker.release.xcconfig"; sourceTree = "<group>"; };
 		E6207F521C660775D08145E0 /* Pods_comicbook_readingtracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comicbook_readingtracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,11 +93,16 @@
 		1C209E02207268E10004C87D /* comicbook-readingtracker */ = {
 			isa = PBXGroup;
 			children = (
+				1C209E272074F9B70004C87D /* comic.json */,
+				1CCFF8A620763A560081F334 /* Ultimate Spider-Man.json */,
+				1C209E29207603110004C87D /* Ultimate X-Men.json */,
 				1C209E03207268E10004C87D /* AppDelegate.swift */,
 				1C209E1720726CA30004C87D /* Comic.swift */,
 				1C209E1F2073AAA80004C87D /* Issue.swift */,
+				1C209E2D20760A970004C87D /* IssueList.swift */,
 				1C209E19207270790004C87D /* ComicDetailViewController.swift */,
 				1C209E05207268E10004C87D /* ReadingListViewController.swift */,
+				1C209E2B2076046E0004C87D /* ListSelectionViewController.swift */,
 				1C209E1B207398820004C87D /* IssueTableViewCell.swift */,
 				1C209E1C207398820004C87D /* IssueTableViewCell.xib */,
 				1C209E07207268E10004C87D /* Main.storyboard */,
@@ -169,10 +184,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C209E16207269FA0004C87D /* .gitignore in Resources */,
+				1CCFF8A720763A560081F334 /* Ultimate Spider-Man.json in Resources */,
 				1C209E1E207398820004C87D /* IssueTableViewCell.xib in Resources */,
 				1C209E0E207268E10004C87D /* LaunchScreen.storyboard in Resources */,
+				1C209E2A207603110004C87D /* Ultimate X-Men.json in Resources */,
 				1C209E0B207268E10004C87D /* Assets.xcassets in Resources */,
 				1C209E09207268E10004C87D /* Main.storyboard in Resources */,
+				1C209E282074F9B90004C87D /* comic.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +240,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -229,6 +248,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,7 +266,9 @@
 				1C209E1D207398820004C87D /* IssueTableViewCell.swift in Sources */,
 				1C209E06207268E10004C87D /* ReadingListViewController.swift in Sources */,
 				1C209E1820726CA30004C87D /* Comic.swift in Sources */,
+				1C209E2C2076046E0004C87D /* ListSelectionViewController.swift in Sources */,
 				1C209E04207268E10004C87D /* AppDelegate.swift in Sources */,
+				1C209E2E20760A970004C87D /* IssueList.swift in Sources */,
 				1C209E1A207270790004C87D /* ComicDetailViewController.swift in Sources */,
 				1C209E202073AAA80004C87D /* Issue.swift in Sources */,
 			);

@@ -50,7 +50,8 @@ class ComicDetailViewController: UIViewController {
         descriptionLabel.textColor = .white
         
         nameLabel.font = UIFont.boldSystemFont(ofSize: 30)
-        issueNumberLabel.font = UIFont.italicSystemFont(ofSize: 20)
+        issueNumberLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        descriptionLabel.font = UIFont.italicSystemFont(ofSize: 10)
         
         nameLabel.text = ""
         issueNumberLabel.text = ""
