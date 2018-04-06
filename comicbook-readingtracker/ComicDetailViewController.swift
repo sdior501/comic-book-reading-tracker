@@ -41,8 +41,8 @@ class ComicDetailViewController: UIViewController {
     fileprivate func prepareComicDetails() {
         nameLabel.text = comic.name
         issueNumberLabel.text = "Issue: \(comic.issueNumber!)"
-        var descText = comic.description
         
+        var descText = comic.description
         let htmlTags = ["<p>", "</p>", "<i>", "</i>", "<em>", "</em>", "<b>", "</b>", "<h2>", "</h2>", "<strong>", "</strong>"]
         
         for tag in htmlTags {
@@ -52,9 +52,7 @@ class ComicDetailViewController: UIViewController {
             }
             descText = descText?.replacingOccurrences(of: tag, with: replacingString)
         }
-        
         descriptionLabel.text = descText
-        
     }
     
     fileprivate func prepareLabels() {

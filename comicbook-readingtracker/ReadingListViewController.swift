@@ -62,6 +62,12 @@ class ReadingListViewController: UIViewController {
                     guard let comic = searchResponse.comic?[0] else {
                         return
                     }
+                    
+                    if User.readComics.contains(comic.id!) {
+                        print(User.readComics)
+                        comic.read = true
+                    }
+                    
                     self.prepareComicCover(of: comic)
                     self.comicArray.append(comic)
                     comic.order = issue.order
@@ -133,6 +139,14 @@ extension ReadingListViewController: UITableViewDelegate, UITableViewDataSource 
         cell.readingNumberLabel.text = "#\(indexPath.row + 1) / \(readingList.count)"
         cell.volumeNameLabel.text = "\(comicAtIndex.volume?.nameVolume ?? "") (\(comicAtIndex.volume?.year ?? ""))"
         cell.issueNameLabel.text = "\(comicAtIndex.issueNumber ?? "") / \(comicAtIndex.volume?.totalIssues.map(String.init) ?? "")\n\(comicAtIndex.name ?? "")"
+        
+        cell.comic = comicAtIndex
+        
+        if comicAtIndex.read {
+            cell.checkBox.setCheckState(.checked, animated: false)
+        } else {
+            cell.checkBox.setCheckState(.unchecked, animated: false)
+        }
         
         return cell
     }

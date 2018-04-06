@@ -36,6 +36,7 @@ class Comic: Mappable {
     var coverImage: UIImage?
     var volume: Volume?
     var order: Int!
+    var read = false
     
     required init?(map: Map) {
     }
@@ -46,7 +47,6 @@ class Comic: Mappable {
         cover <- map["image"]
         issueNumber <- map["issue_number"]
         name <- map["name"]
-        
     }
 }
 

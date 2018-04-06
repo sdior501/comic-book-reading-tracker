@@ -11,6 +11,7 @@
 		1C1B7C6C20775045000A728A /* ListsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1B7C6A20775045000A728A /* ListsTableViewCell.xib */; };
 		1C1B7C6E207794A9000A728A /* Spawn.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C1B7C6D207794A9000A728A /* Spawn.json */; };
 		1C1B7C7020779B51000A728A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1B7C6F20779B51000A728A /* Assets.xcassets */; };
+		1C1B7C722077A1D1000A728A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B7C712077A1D1000A728A /* User.swift */; };
 		1C209E04207268E10004C87D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C209E03207268E10004C87D /* AppDelegate.swift */; };
 		1C209E06207268E10004C87D /* ReadingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C209E05207268E10004C87D /* ReadingListViewController.swift */; };
 		1C209E09207268E10004C87D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C209E07207268E10004C87D /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		1C1B7C6A20775045000A728A /* ListsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListsTableViewCell.xib; sourceTree = "<group>"; };
 		1C1B7C6D207794A9000A728A /* Spawn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Spawn.json; sourceTree = "<group>"; };
 		1C1B7C6F20779B51000A728A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C1B7C712077A1D1000A728A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1C209E00207268E10004C87D /* comicbook-readingtracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "comicbook-readingtracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C209E03207268E10004C87D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C209E05207268E10004C87D /* ReadingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				1C209E1720726CA30004C87D /* Comic.swift */,
 				1C209E1F2073AAA80004C87D /* Issue.swift */,
 				1C209E2D20760A970004C87D /* IssueList.swift */,
+				1C1B7C712077A1D1000A728A /* User.swift */,
 				1C209E19207270790004C87D /* ComicDetailViewController.swift */,
 				1C209E05207268E10004C87D /* ReadingListViewController.swift */,
 				1C209E2B2076046E0004C87D /* ListSelectionViewController.swift */,
@@ -282,6 +285,7 @@
 				1C209E04207268E10004C87D /* AppDelegate.swift in Sources */,
 				1C209E2E20760A970004C87D /* IssueList.swift in Sources */,
 				1C209E1A207270790004C87D /* ComicDetailViewController.swift in Sources */,
+				1C1B7C722077A1D1000A728A /* User.swift in Sources */,
 				1C209E202073AAA80004C87D /* Issue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
