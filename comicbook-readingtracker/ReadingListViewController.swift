@@ -29,6 +29,8 @@ class ReadingListViewController: UIViewController {
             fileName = "Ultimate Spider-Man"
         case .UltimateXMen:
             fileName = "Ultimate X-Men"
+        case .Spawn:
+            fileName = "Spawn"
         default:
             break
         }
@@ -122,14 +124,14 @@ extension ReadingListViewController: UITableViewDelegate, UITableViewDataSource 
         }
         
         let comicAtIndex = comicArray[indexPath.row]
-                
+        
         cell.readingNumberLabel.font = UIFont.boldSystemFont(ofSize: 30)
-        cell.volumeNameLabel.font = UIFont.italicSystemFont(ofSize: 20)
+        cell.volumeNameLabel.font = UIFont.boldSystemFont(ofSize: 15)
         cell.issueNameLabel.font = UIFont.boldSystemFont(ofSize: 15)
         
         cell.coverView.image = comicAtIndex.coverImage
         cell.readingNumberLabel.text = "#\(indexPath.row + 1) / \(readingList.count)"
-        cell.volumeNameLabel.text = comicAtIndex.volume?.nameVolume
+        cell.volumeNameLabel.text = "\(comicAtIndex.volume?.nameVolume ?? "") (\(comicAtIndex.volume?.year ?? ""))"
         cell.issueNameLabel.text = "\(comicAtIndex.issueNumber ?? "") / \(comicAtIndex.volume?.totalIssues.map(String.init) ?? "")\n\(comicAtIndex.name ?? "")"
         
         return cell

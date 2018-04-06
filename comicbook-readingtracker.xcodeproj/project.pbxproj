@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1B7C6B20775045000A728A /* ListsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B7C6920775045000A728A /* ListsTableViewCell.swift */; };
+		1C1B7C6C20775045000A728A /* ListsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1B7C6A20775045000A728A /* ListsTableViewCell.xib */; };
+		1C1B7C6E207794A9000A728A /* Spawn.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C1B7C6D207794A9000A728A /* Spawn.json */; };
+		1C1B7C7020779B51000A728A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1B7C6F20779B51000A728A /* Assets.xcassets */; };
 		1C209E04207268E10004C87D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C209E03207268E10004C87D /* AppDelegate.swift */; };
 		1C209E06207268E10004C87D /* ReadingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C209E05207268E10004C87D /* ReadingListViewController.swift */; };
 		1C209E09207268E10004C87D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C209E07207268E10004C87D /* Main.storyboard */; };
-		1C209E0B207268E10004C87D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C209E0A207268E10004C87D /* Assets.xcassets */; };
 		1C209E0E207268E10004C87D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C209E0C207268E10004C87D /* LaunchScreen.storyboard */; };
 		1C209E16207269FA0004C87D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1C209E15207269FA0004C87D /* .gitignore */; };
 		1C209E1820726CA30004C87D /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C209E1720726CA30004C87D /* Comic.swift */; };
@@ -27,11 +30,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C1B7C6920775045000A728A /* ListsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsTableViewCell.swift; sourceTree = "<group>"; };
+		1C1B7C6A20775045000A728A /* ListsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListsTableViewCell.xib; sourceTree = "<group>"; };
+		1C1B7C6D207794A9000A728A /* Spawn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Spawn.json; sourceTree = "<group>"; };
+		1C1B7C6F20779B51000A728A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C209E00207268E10004C87D /* comicbook-readingtracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "comicbook-readingtracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C209E03207268E10004C87D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C209E05207268E10004C87D /* ReadingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListViewController.swift; sourceTree = "<group>"; };
 		1C209E08207268E10004C87D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1C209E0A207268E10004C87D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C209E0D207268E10004C87D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C209E0F207268E10004C87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C209E15207269FA0004C87D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 				1C209E272074F9B70004C87D /* comic.json */,
 				1CCFF8A620763A560081F334 /* Ultimate Spider-Man.json */,
 				1C209E29207603110004C87D /* Ultimate X-Men.json */,
+				1C1B7C6D207794A9000A728A /* Spawn.json */,
 				1C209E03207268E10004C87D /* AppDelegate.swift */,
 				1C209E1720726CA30004C87D /* Comic.swift */,
 				1C209E1F2073AAA80004C87D /* Issue.swift */,
@@ -105,9 +112,11 @@
 				1C209E2B2076046E0004C87D /* ListSelectionViewController.swift */,
 				1C209E1B207398820004C87D /* IssueTableViewCell.swift */,
 				1C209E1C207398820004C87D /* IssueTableViewCell.xib */,
+				1C1B7C6920775045000A728A /* ListsTableViewCell.swift */,
+				1C1B7C6A20775045000A728A /* ListsTableViewCell.xib */,
 				1C209E07207268E10004C87D /* Main.storyboard */,
-				1C209E0A207268E10004C87D /* Assets.xcassets */,
 				1C209E0C207268E10004C87D /* LaunchScreen.storyboard */,
+				1C1B7C6F20779B51000A728A /* Assets.xcassets */,
 				1C209E0F207268E10004C87D /* Info.plist */,
 			);
 			path = "comicbook-readingtracker";
@@ -186,9 +195,11 @@
 				1C209E16207269FA0004C87D /* .gitignore in Resources */,
 				1CCFF8A720763A560081F334 /* Ultimate Spider-Man.json in Resources */,
 				1C209E1E207398820004C87D /* IssueTableViewCell.xib in Resources */,
+				1C1B7C6E207794A9000A728A /* Spawn.json in Resources */,
+				1C1B7C7020779B51000A728A /* Assets.xcassets in Resources */,
 				1C209E0E207268E10004C87D /* LaunchScreen.storyboard in Resources */,
+				1C1B7C6C20775045000A728A /* ListsTableViewCell.xib in Resources */,
 				1C209E2A207603110004C87D /* Ultimate X-Men.json in Resources */,
-				1C209E0B207268E10004C87D /* Assets.xcassets in Resources */,
 				1C209E09207268E10004C87D /* Main.storyboard in Resources */,
 				1C209E282074F9B90004C87D /* comic.json in Resources */,
 			);
@@ -265,6 +276,7 @@
 			files = (
 				1C209E1D207398820004C87D /* IssueTableViewCell.swift in Sources */,
 				1C209E06207268E10004C87D /* ReadingListViewController.swift in Sources */,
+				1C1B7C6B20775045000A728A /* ListsTableViewCell.swift in Sources */,
 				1C209E1820726CA30004C87D /* Comic.swift in Sources */,
 				1C209E2C2076046E0004C87D /* ListSelectionViewController.swift in Sources */,
 				1C209E04207268E10004C87D /* AppDelegate.swift in Sources */,
@@ -411,7 +423,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "comicbook-readingtracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sdi.comicbook-readingtracker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdizdar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -426,7 +438,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "comicbook-readingtracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sdi.comicbook-readingtracker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdizdar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

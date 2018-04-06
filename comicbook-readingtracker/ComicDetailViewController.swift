@@ -41,7 +41,20 @@ class ComicDetailViewController: UIViewController {
     fileprivate func prepareComicDetails() {
         nameLabel.text = comic.name
         issueNumberLabel.text = "Issue: \(comic.issueNumber!)"
-        descriptionLabel.text = comic.description
+        var descText = comic.description
+        
+        let htmlTags = ["<p>", "</p>", "<i>", "</i>", "<em>", "</em>", "<b>", "</b>", "<h2>", "</h2>", "<strong>", "</strong>"]
+        
+        for tag in htmlTags {
+            var replacingString = ""
+            if tag == "</p>" {
+                replacingString = "\n"
+            }
+            descText = descText?.replacingOccurrences(of: tag, with: replacingString)
+        }
+        
+        descriptionLabel.text = descText
+        
     }
     
     fileprivate func prepareLabels() {
@@ -51,7 +64,7 @@ class ComicDetailViewController: UIViewController {
         
         nameLabel.font = UIFont.boldSystemFont(ofSize: 30)
         issueNumberLabel.font = UIFont.boldSystemFont(ofSize: 20)
-        descriptionLabel.font = UIFont.italicSystemFont(ofSize: 10)
+        descriptionLabel.font = UIFont.italicSystemFont(ofSize: 15)
         
         nameLabel.text = ""
         issueNumberLabel.text = ""

@@ -3,6 +3,7 @@ import UIKit
 enum IssueType {
     case UltimateSpiderMan
     case UltimateXMen
+    case Spawn
 }
 
 struct IssueList {

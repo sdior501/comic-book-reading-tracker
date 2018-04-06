@@ -17,13 +17,14 @@ class ListSelectionViewController: UIViewController {
     fileprivate func prepareIssueList() {
         let ultimateSpiderMan = IssueList(issueType: IssueType.UltimateSpiderMan, name: "Ultimate Spider-Man", logo: UIImage(named:"spidey_logo")!)
         let ultimateXMen = IssueList(issueType: IssueType.UltimateXMen, name: "Ultimate X-Men", logo: UIImage(named:"xmen_logo")!)
-        readingLists = [ultimateSpiderMan, ultimateXMen]
+        let spawn = IssueList(issueType: IssueType.Spawn, name: "Spawn", logo: UIImage(named:"spawn_logo")!)
+        readingLists = [ultimateSpiderMan, ultimateXMen, spawn]
     }
     
     fileprivate func prepareTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "IssueTableViewCell", bundle: nil), forCellReuseIdentifier: "IssueTableViewCell")
+        tableView.register(UINib(nibName: "ListsTableViewCell", bundle: nil), forCellReuseIdentifier: "ListsTableViewCell")
     }
     fileprivate func prepareNavigationBar() {
         navigationItem.title = "Comic Book Reading Order"
@@ -53,20 +54,16 @@ extension ListSelectionViewController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell: IssueTableViewCell = tableView.dequeueReusableCell(withIdentifier: "IssueTableViewCell") as? IssueTableViewCell else {
+        guard let cell: ListsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "ListsTableViewCell") as? ListsTableViewCell else {
             return UITableViewCell()
         }
         
        let listAtIndex = readingLists[indexPath.row]
    
-        cell.readingNumberLabel.font = UIFont.boldSystemFont(ofSize: 30)
-        cell.volumeNameLabel.font = UIFont.italicSystemFont(ofSize: 20)
-        cell.issueNameLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        cell.listNameLabel.font = UIFont.boldSystemFont(ofSize: 20)
         
         cell.coverView.image = listAtIndex.logo
-        cell.readingNumberLabel.text = ""
-        cell.volumeNameLabel.text = ""
-        cell.issueNameLabel.text = listAtIndex.name
+        cell.listNameLabel.text = listAtIndex.name
         
         return cell
     }
